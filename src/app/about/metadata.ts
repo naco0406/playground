@@ -10,7 +10,7 @@ export const siteMetadata: ProjectMetadata[] = [
     {
         title: 'KBO',
         description: '2025 KBO 개막 전까지 개발 중',
-        path: 'https://lookalike-naco.vercel.app/',
+        path: 'https://lookalike.naco.kr/',
         status: 'in-progress',
         children: [
             {
