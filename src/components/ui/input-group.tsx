@@ -7,7 +7,8 @@ export interface InputGroupProps extends BoxProps {
   endElementProps?: InputElementProps
   startElement?: React.ReactNode
   endElement?: React.ReactNode
-  children: React.ReactElement
+  // children 타입을 더 구체적으로 지정
+  children: React.ReactElement<InputElementProps>
   startOffset?: InputElementProps["paddingStart"]
   endOffset?: InputElementProps["paddingEnd"]
 }
@@ -25,8 +26,9 @@ export const InputGroup = React.forwardRef<HTMLDivElement, InputGroupProps>(
       ...rest
     } = props
 
-    const child =
-      React.Children.only<React.ReactElement<InputElementProps>>(children)
+    // children의 타입이 이미 React.ReactElement<InputElementProps>로 지정되어 있으므로
+    // 타입 assertion이 필요 없음
+    const child = React.Children.only(children)
 
     return (
       <Group ref={ref} {...rest}>
@@ -51,3 +53,5 @@ export const InputGroup = React.forwardRef<HTMLDivElement, InputGroupProps>(
     )
   },
 )
+
+InputGroup.displayName = "InputGroup"
