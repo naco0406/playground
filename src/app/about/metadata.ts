@@ -22,6 +22,12 @@ export const siteMetadata: ProjectMetadata[] = [
         ],
     },
     {
+        title: 'Playground',
+        description: '김나코의 놀이터',
+        path: '/',
+        status: 'in-progress',
+    },
+    {
         title: 'Linkle',
         description: '매일 위키피디아 탐험하기',
         path: 'https://linkle.naco.kr/',
