@@ -61,7 +61,7 @@ export default function Home() {
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://blog.naco.kr/"
+          href="https://blog.naver.com/kaist21ky"
           target="_blank"
           rel="noopener noreferrer"
         >
